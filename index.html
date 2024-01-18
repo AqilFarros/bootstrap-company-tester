@@ -404,7 +404,34 @@
         </div>
     </div>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <script>
+        let tl = gsap.timeline()
+
+        tl.to(".web-title", {
+            duration: 1.2,
+            text: {
+                value: "MODERN FURNITURE <br>HOME FURNISHING",
+                oldClass: "bg-success",
+                // speed: 1
+            }
+        })
+        .to(".web-desc", {
+            duration: 1.5,
+            text: {
+                value: "Elevate your home with our meticulously crafted premium furniture, enhancing both aesthetics and functionality for sophisticated comfort.",
+                oldClass: "bg-success",
+                // speed: 3
+            }
+        })
+        .from("#firstGroupButton", {
+            duration: .9,
+            opacity: 0,
+            x: -100,
+            ease: "power4.out",
+        }, "-=1")
+    </script>
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="design.js"></script>
