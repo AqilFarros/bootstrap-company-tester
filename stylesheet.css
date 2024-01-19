@@ -2,6 +2,25 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    body {
+        overflow-x: hidden;
+        height: 100vh;
+        overscroll-behavior: none;
+    }
+
+    .pembungkus {
+        overscroll-behavior: none;
+        width: 200%;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
 
 /* NAVBAR */
@@ -194,4 +213,12 @@ h5 {
 
 .block {
     display: block;
+}
+
+/* .web-desc {
+    opacity: 0;
+} */
+
+.transparent {
+    color: transparent;
 }
