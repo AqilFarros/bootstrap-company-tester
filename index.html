@@ -50,16 +50,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 text-center">
                     <li class="nav-item mx-4">
-                        <a class="nav-link active" aria-current="page" href="#home" id="navLink">Home</a>
+                        <a class="nav-link anchor active" aria-current="page" href="#home" id="navLink">Home</a>
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link link-hr" href="#why" id="navLink">About</a>
+                        <a class="nav-link anchor link-hr" href="#why" id="navLink">About</a>
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link link-hr" href="#service" id="navLink">Service</a>
+                        <a class="nav-link anchor link-hr" href="#service" id="navLink">Service</a>
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" href="#contact" id="navLink">Contact</a>
+                        <a class="nav-link anchor" href="#contact" id="navLink">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -79,12 +79,12 @@
                     <div class="row justify-content-center w-100">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 me-0 text-center" id="firstGroupButton">
                             <a href="#service" type="button"
-                                class="btn btn-outline-warning rounded-pill py-2 px-4 btn1 mb-4 text-nowrap">Shop
+                                class="btn btn-outline-warning rounded-pill py-2 px-4 btn1 mb-4 text-nowrap anchor">Shop
                                 now</a>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 text-center" id="firstGroupButton">
                             <a href="#why" type="button"
-                                class="btn btn-outline-warning rounded-pill py-2 px-4">Explore</a>
+                                class="btn btn-outline-warning rounded-pill py-2 px-4 anchor">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
 
     <div class="container-fluid parentPembungkus">
         <div class="pembungkus">
-            <div class="container-fluid panel why my-1" id="why">
+            <div class="container-fluid panel why my-2" id="why">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-lg-7 col-12 d-flex flex-column justify-content-evenly">
@@ -155,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid panel my-1" id="service">
+            <div class="container-fluid panel my-4" id="service">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-12 text-center">
@@ -164,7 +164,7 @@
                                 care.
                                 Superior materials ensure enduring quality and timeless elegance.</p>
                         </div>
-                        <div class="col-12 mt-5">
+                        <div class="col-12 mt-0">
                             <div class="row justify-content-center">
                                 <div class="d-flex justify-content-center col-lg-4 col-md-6 col-12 my-5">
                                     <div class="card pb-5 kartu border border-success" style="width: 18rem;">
@@ -462,7 +462,7 @@
         let parentPembungkus = document.querySelector(".parentPembungkus"),
             pembungkus = document.querySelector(".pembungkus"),
             tween;
-        document.querySelectorAll(".navbar .nav-link").forEach((anchor) => {
+        document.querySelectorAll(".anchor").forEach((anchor) => {
             anchor.addEventListener("click", (e) => {
                 e.preventDefault();
                 let targetElem = document.querySelector(e.target.getAttribute("href")),
